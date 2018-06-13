@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Jaideep_CategoryLabel>
+            <version>0.2.0</version>
+        </Jaideep_CategoryLabel>
+    </modules>
+    <global>
+        <models>
+            <jaideep_categorylabel>
+                <class>Jaideep_CategoryLabel_Model</class>
+            </jaideep_categorylabel>
+        </models>
+        <resources>
+          <categorylabel_setup>
+            <setup>
+              <module>Jaideep_CategoryLabel</module>
+              <class>Mage_Eav_Model_Entity_Setup</class>
+            </setup>
+            <connection>
+              <use>default_setup</use>
+            </connection>
+          </categorylabel_setup>
+        </resources>
+        <helpers>
+            <CategoryLabel>
+                <class>Jaideep_CategoryLabel_Helper</class>
+            </CategoryLabel>
+<!--             <jaideep_categorylabel>
+                <class>Jaideep_CategoryLabel_Helper</class>
+            </jaideep_categorylabel> -->
+        </helpers>
+    </global>
+    <default>
+        <tab_general>
+            <general>
+                <active>0</active>
+            </general>
+        </tab_general>
+    </default>
+</config>
